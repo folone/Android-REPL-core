@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">REPL</string>
+<string name="lambda"><b><u>evaluator&gt;</u></b></string>
+<string name="environment">Choose evaluator</string>
+<string name="history">History</string>
+<string name="scripts">Scripts</string>
+<string name="services">Services</string>
+<string name="prefs">Preferences</string>
+<string name="helpMsg"> Hello, human. My name is REPL. Depending on installed packages, I can evaluate scripts, written in various programming languages. You can see, what packages are installed in the dropdown list on the bottom. \nChoose your desired programming language, type your script, and hit \'EVAL\'. I will print the response to the console.\nCommands, I understand:\nhelp:\t\t\t\t\t\tview this message\ncls or clrscr or clear:\tclear screen\n</string>
+<string name="no_packages_error">No repl services installed. Go grab some from the market.\nTip: for example, start from Scheme REPL Module.</string>
+<string name="service_error">Error communicating with desired service, try again</string>
+<string name="saved">Saved.</string>
+<string name="input">Input:</string>
+<string name="result">\nResult: </string>
+<string name="no_code_error">Some code would be nice.</string>
+</resources>

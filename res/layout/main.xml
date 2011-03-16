@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    >
+    
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+        
+		<TextView 
+			android:id="@+id/result" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/lambda"
+			/>
+	</ScrollView>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	>
+		
+		<EditText
+		        android:id="@+id/entry"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@android:drawable/editbox_background"
+		        android:hint="Type 'help' to view help"
+		        />
+		        
+		<Button
+		        android:id="@+id/eval"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginLeft="10dip"
+		        android:text="EVAL"
+		        android:layout_below="@id/entry"
+		        android:drawableRight="@android:drawable/star_off"/>
+	
+		<Spinner 
+		        android:id="@+id/environment"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true"
+		        android:prompt="@string/environment"
+		        android:layout_toLeftOf="@id/eval"
+		        android:layout_below="@id/entry"
+				/>
+	</RelativeLayout>	
+
+</LinearLayout>
