@@ -48,7 +48,7 @@ public class REPL extends Activity {
     private List<ResolveInfo> services;
     private List<String> serviceNames;
     
-    private Resources res = getResources();
+    private Resources res;
     protected final String TAG = "REPL-core";
 
     /** Called when the activity is first created. */
@@ -60,6 +60,7 @@ public class REPL extends Activity {
         // Using app rater.
         AppRater.app_launched(this);
 
+        res = getResources();
         result = (TextView) findViewById(R.id.result);
         env = (Spinner) findViewById(R.id.environment);
         eval = (Button) findViewById(R.id.eval);
