@@ -56,6 +56,9 @@ public class REPL extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        // Using app rater.
+        AppRater.app_launched(this);
 
         result = (TextView) findViewById(R.id.result);
         env = (Spinner) findViewById(R.id.environment);
